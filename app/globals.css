@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+:root {
+  --background: #faf7f0;
+  --foreground: #1c2a22;
+
+  /* Staze Krajine design tokeni — priroda/staze/održivi turizam */
+  --color-forest-50: #f1f7f3;
+  --color-forest-100: #dcebe1;
+  --color-forest-200: #b6d7c3;
+  --color-forest-300: #86bb9d;
+  --color-forest-400: #579877;
+  --color-forest-500: #367a5c;
+  --color-forest-600: #286049;
+  --color-forest-700: #214d3c;
+  --color-forest-800: #1c3e31;
+  --color-forest-900: #18332a;
+
+  --color-sand-50: #faf7f0;
+  --color-sand-100: #f2ecdc;
+  --color-sand-200: #e6d9bd;
+
+  --color-clay-400: #c97f4a;
+  --color-clay-500: #b2683a;
+  --color-clay-600: #93522d;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-forest-50: var(--color-forest-50);
+  --color-forest-100: var(--color-forest-100);
+  --color-forest-200: var(--color-forest-200);
+  --color-forest-300: var(--color-forest-300);
+  --color-forest-400: var(--color-forest-400);
+  --color-forest-500: var(--color-forest-500);
+  --color-forest-600: var(--color-forest-600);
+  --color-forest-700: var(--color-forest-700);
+  --color-forest-800: var(--color-forest-800);
+  --color-forest-900: var(--color-forest-900);
+  --color-sand-50: var(--color-sand-50);
+  --color-sand-100: var(--color-sand-100);
+  --color-sand-200: var(--color-sand-200);
+  --color-clay-400: var(--color-clay-400);
+  --color-clay-500: var(--color-clay-500);
+  --color-clay-600: var(--color-clay-600);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+html {
+  scroll-behavior: smooth;
+}
