@@ -69,7 +69,7 @@ export default function AboutPage() {
         <div className="relative aspect-video w-full overflow-hidden rounded-2xl border border-forest-100 shadow-md">
           <iframe
             className="absolute inset-0 h-full w-full"
-            src="https://www.youtube.com/watch?v=DOClrinYdPM"
+            src="https://www.youtube-nocookie.com/embed/DOClrinYdPM?autoplay=1&mute=1&loop=1&playlist=DOClrinYdPM&controls=1"
             title="Staze Krajine Video"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
