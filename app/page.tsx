@@ -57,7 +57,7 @@ export default function Home() {
           </div>
           <div className="relative aspect-[4/3] w-full overflow-hidden rounded-3xl shadow-md">
             <Image
-              src="/dokumenti/hero.jpg"
+              src="/hero.jpeg"
               alt="Staze Krajine outdoor priroda"
               fill
               className="object-cover"
