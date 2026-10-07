@@ -1,33 +1,3 @@
-import { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "Projekti | Udruženje građana Staze Krajine",
-  description:
-    "Otkrijte naše trenutne i završene projekte razvoja, mapiranja i digitalizacije outdoor i održivog turizma u Krajini.",
-  keywords: [
-    "projekti staze krajine", // Focus keyphrase
-    "mapiranje planinarskih staza", // Synonym 1
-    "digitalizacija outdoor turizma", // Synonym 2
-    "turističke staze krajina",
-    "razvoj ruralnog turizma",
-  ],
-  openGraph: {
-    title: "Projekti Održivog Turizma | Staze Krajine",
-    description:
-      "Pregled projekata uređenja, označavanja i digitalne promocije turističkih staza u regionu Krajine.",
-    url: "https://stazekrajine.org/projekti", // Slug
-    siteName: "Staze Krajine",
-    images: [
-      {
-        url: "https://stazekrajine.org/hero.jpeg", // Featured Image
-        width: 1200,
-        height: 630,
-        alt: "Mapiranje i obilježavanje planinarskih staza u Krajini", // Alt text
-      },
-    ],
-    type: "website",
-  },
-};
 import type { Metadata } from "next";
 import { PageHero, Section } from "@/components/Section";
 
