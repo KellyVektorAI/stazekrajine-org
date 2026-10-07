@@ -38,14 +38,14 @@ const team = [
     bio: "Kontakt: +387 65 210 302",
   },
   {
-    name: "[PLACEHOLDER - popuniti ime i prezime]",
-    role: "[PLACEHOLDER - npr. Koordinator/ica projekata]",
-    bio: "[PLACEHOLDER - kratka biografija člana/ice vodstva udruženja.]",
+    name: "Tamara Mirnić",
+    role: "Sekretar",
+    bio: "Kontakt: +387 66 927 522",
   },
   {
-    name: "[PLACEHOLDER - popuniti ime i prezime]",
-    role: "[PLACEHOLDER - npr. Koordinator/ica digitalizacije]",
-    bio: "[PLACEHOLDER - kratka biografija člana/ice vodstva udruženja.]",
+    name: "Nikola Macan",
+    role: "Grafički dizajner",
+    bio: "Kontakt: +387 63 584 536",
   },
 ];
 
