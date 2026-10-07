@@ -65,15 +65,14 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Video Background Banner with Poster Fallback */}
-      <section className="relative h-[350px] w-full overflow-hidden sm:h-[450px]">
+      {/* Direct MP4 Background Video Banner */}
+      <section className="relative h-[350px] w-full overflow-hidden bg-forest-900 sm:h-[450px]">
         <video
           autoPlay
           loop
           muted
           playsInline
           preload="auto"
-          poster="/hero.jpeg"
           className="absolute inset-0 h-full w-full object-cover"
         >
           <source src="/promo.mp4" type="video/mp4" />
