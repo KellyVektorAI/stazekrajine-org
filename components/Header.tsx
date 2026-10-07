@@ -28,7 +28,7 @@ export function Header() {
                 className={`rounded-full px-4 py-2 text-sm font-medium transition-colors ${
                   active
                     ? "bg-forest-700 text-sand-50"
-                    : "text-forest-800 hover:bg-forest-100"
+                    : "text-[#ff8e29] hover:[#ff8e29]"
                 }`}
               >
                 {item.label}
