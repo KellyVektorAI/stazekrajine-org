@@ -1,6 +1,6 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Section } from "@/components/Section";
-import { TrailHeroArt } from "@/components/TrailHeroArt";
 
 const pillars = [
   {
@@ -55,8 +55,14 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <div className="aspect-[4/3] w-full">
-            <TrailHeroArt />
+          <div className="relative aspect-[4/3] w-full overflow-hidden rounded-3xl shadow-md">
+            <Image
+              src="/dokumenti/hero.jpg"
+              alt="Staze Krajine outdoor priroda"
+              fill
+              className="object-cover"
+              priority
+            />
           </div>
         </div>
       </section>
