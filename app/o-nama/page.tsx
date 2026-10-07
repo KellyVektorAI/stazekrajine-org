@@ -65,6 +65,18 @@ export default function AboutPage() {
         </div>
       </section>
 
+      <div className="mx-auto my-8 max-w-5xl px-4 sm:px-6 lg:px-8">
+        <div className="relative aspect-video w-full overflow-hidden rounded-2xl border border-forest-100 shadow-md">
+          <iframe
+            className="absolute inset-0 h-full w-full"
+            src="https://www.youtube.com/embed/cK4SuRRMxAk?autoplay=1&mute=1&loop=1&playlist=cK4SuRRMxAk&controls=1"
+            title="Staze Krajine Video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
+        </div>
+      </div>
+
       <Section title="Misija i vizija">
         <div className="grid gap-6 sm:grid-cols-2">
           <div className="rounded-2xl border border-forest-100 bg-white p-6 shadow-sm">
