@@ -43,13 +43,13 @@ export default function Home() {
             <div className="mt-8 flex flex-wrap gap-4">
               <Link
                 href="/projekti"
-                className="rounded-full bg-forest-700 px-6 py-3 text-sm font-semibold text-sand-50 transition-colors hover:bg-forest-800"
+                className="rounded-full bg-forest-700 px-6 py-3 text-sm font-semibold text-sand-50 transition-colors hover:bg-[#ff8e29]"
               >
                 Istraži projekte
               </Link>
               <Link
                 href="/clanstvo"
-                className="rounded-full border border-forest-300 px-6 py-3 text-sm font-semibold text-forest-800 transition-colors hover:bg-[#ff8e29]"
+                className="rounded-full border border-forest-300 px-6 py-3 text-sm font-semibold text-forest-800 transition-colors hover:bg-forest-100"
               >
                 Postani partner / član
               </Link>
