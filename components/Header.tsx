@@ -12,10 +12,10 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-forest-100 bg-sand-50/90 backdrop-blur">
-     <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-8 sm:px-8">
-        <div className="flex items-center text-forest-900 [&_img]:h-16 [&_img]:w-auto [&_svg]:h-16 [&_svg]:w-auto">
-  <Logo/>
-</div>
+<div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-2 sm:px-8">
+  <div className="flex items-center text-forest-900 [&_img]:h-24 [&_img]:w-auto [&_svg]:h-24 [&_svg]:w-auto sm:[&_img]:h-28 sm:[&_svg]:h-28">
+    <Logo />
+  </div>
 
         <nav className="hidden items-center gap-1 md:flex">
           {navigation.map((item) => {
