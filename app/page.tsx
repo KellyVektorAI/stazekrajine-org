@@ -49,7 +49,7 @@ export default function Home() {
               </Link>
               <Link
                 href="/clanstvo"
-                className="rounded-full border border-forest-300 px-6 py-3 text-sm font-semibold text-forest-800 transition-colors hover:bg-forest-100"
+                className="rounded-full border border-forest-300 px-6 py-3 text-sm font-semibold text-forest-800 transition-colors hover:border-[#ff8e29] hover:bg-[#ff8e29]/10 hover:text-[#ff8e29]"
               >
                 Postani partner / član
               </Link>
