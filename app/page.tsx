@@ -103,7 +103,7 @@ export default function Home() {
           </p>
           <Link
             href="/clanstvo"
-            className="mt-2 rounded-full bg-forest-700 px-6 py-3 text-sm font-semibold text-sand-50 transition-colors hover:bg-forest-800"
+            className="rounded-full bg-forest-700 px-6 py-3 text-sm font-semibold text-sand-50 transition-colors hover:bg-[#ff8e29]"
           >
             Prijavi interes
           </Link>
