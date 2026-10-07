@@ -90,7 +90,7 @@ export default function PartnerstvaPage() {
         <div className="mt-10 text-center">
           <Link
             href="/clanstvo"
-            className="inline-block rounded-full bg-forest-700 px-6 py-3 text-sm font-semibold text-sand-50 transition-colors hover:bg-forest-800"
+            className="inline-block rounded-full bg-forest-700 px-6 py-3 text-sm font-semibold text-sand-50 transition-colors hover:bg-[#ff8e29]"
           >
             Prijavi se kao partner
           </Link>
