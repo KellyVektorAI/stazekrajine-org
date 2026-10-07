@@ -65,22 +65,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Direct MP4 Background Video Banner */}
-      <section className="relative h-[350px] w-full overflow-hidden bg-forest-900 sm:h-[450px]">
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          preload="auto"
-          className="absolute inset-0 h-full w-full object-cover"
-        >
-          <source src="/promo.mp4" type="video/mp4" />
-          Vaš preglednik ne podržava video element.
-        </video>
-        <div className="absolute inset-0 bg-black/20" />
-      </section>
-
       <Section title="Misija i vizija">
         <div className="grid gap-6 sm:grid-cols-2">
           <div className="rounded-2xl border border-forest-100 bg-white p-6 shadow-sm">
@@ -91,39 +75,4 @@ export default function AboutPage() {
               povezivanje tradicije sa modernim digitalnim alatima.
             </p>
           </div>
-          <div className="rounded-2xl border border-forest-100 bg-white p-6 shadow-sm">
-            <h3 className="text-lg font-semibold text-forest-900">Vizija</h3>
-            <p className="mt-2 text-sm leading-relaxed text-forest-700">
-              Krajina prepoznata kao regija održivog outdoor turizma u Bosni i
-              Hercegovini, u kojoj lokalne zajednice imaju koristi od očuvanja
-              prirodnog i kulturnog naslijeđa.
-            </p>
-          </div>
-        </div>
-      </Section>
-
-      <Section title="Vodstvo i tim" tone="muted">
-        <div className="grid gap-6 sm:grid-cols-3">
-          {team.map((m, idx) => (
-            <div
-              key={idx}
-              className="flex flex-col items-center rounded-2xl border border-forest-100 bg-white p-6 text-center shadow-sm"
-            >
-              <div className="flex h-16 w-16 items-center justify-center rounded-full bg-forest-100 text-xl font-bold text-forest-800">
-                {idx + 1}
-              </div>
-              <h3 className="mt-4 font-semibold text-forest-900">{m.name}</h3>
-              <p className="text-sm font-medium text-forest-600">{m.role}</p>
-              {m.contact && (
-                <p className="mt-2 text-xs text-forest-700">{m.contact}</p>
-              )}
-              {m.bio && (
-                <p className="mt-2 text-xs text-forest-600">{m.bio}</p>
-              )}
-            </div>
-          ))}
-        </div>
-      </Section>
-    </>
-  );
-}
+          <div className="rounded-2xl border border-forest-
