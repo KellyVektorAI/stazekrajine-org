@@ -115,7 +115,7 @@ export function ContactForm() {
 
       <button
         type="submit"
-        className="w-full rounded-full bg-forest-700 px-6 py-3 text-sm font-semibold text-sand-50 transition-colors hover:bg-forest-800 sm:w-auto"
+        className="rounded-full bg-forest-700 px-6 py-3 text-sm font-semibold text-sand-50 transition-colors hover:bg-forest-800"
       >
         Pošalji prijavu
       </button>
