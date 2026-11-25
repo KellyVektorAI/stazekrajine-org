@@ -1,100 +1,52 @@
 import type { Metadata } from "next";
-import { PageHero, Section } from "@/components/Section";
-import { siteConfig } from "@/lib/site-config";
+import { LegalDocument, type LegalSection } from "@/components/LegalDocument";
 
 export const metadata: Metadata = {
-  title: "Pravila privatnosti",
-  description:
-    "Pravila privatnosti Udruženja građana Staze Krajine — kako obrađujemo podatke posjetilaca sajta i prijava interesa.",
+  title: "Politika privatnosti",
+  description: "Zaštita ličnih podataka pri kontaktu, članstvu, volontiranju i korištenju sajta Udruženja građana Staze Krajine.",
 };
 
+const sections: LegalSection[] = [
+  { title: "1. Ko je odgovoran za podatke?", paragraphs: [
+    "Kontrolor podataka za vlastite aktivnosti na ovom sajtu je Udruženje građana „STAZE KRAJINE“, Kolubarska 13, Banja Luka, Bosna i Hercegovina, JIB 4404626940003, matični broj 11195415. Kontakt za privatnost: stazekrajine@gmail.com.",
+    "Kompanija „Kelly Vektor AI“ d.o.o. je zasebno pravno lice i tehnološki partner na određenim projektima. Samo partnerstvo ne znači automatsko dijeljenje korisničkih podataka; uloge i eventualna obrada za konkretnu uslugu određuju se zasebno."
+  ] },
+  { title: "2. Koje podatke obrađujemo?", bullets: [
+    "Kada nam pišete e-mailom: ime ili naziv organizacije, vašu adresu, sadržaj poruke, eventualni telefon i priloge koje sami pošaljete.",
+    "Kod interesovanja za članstvo, volontiranje, partnerstvo ili prijavu staze: vrstu interesovanja i podatke potrebne da razmotrimo i odgovorimo na inicijativu.",
+    "Kod pristupa sajtu: ograničene tehničke i sigurnosne podatke, kao što su IP adresa, datum zahtjeva i podaci preglednika, koje mogu obrađivati hosting i mrežni servisi.",
+    "Kada aktivirate ugrađeni video ili slijedite link druge platforme: relevantni podaci mogu biti obrađeni prema pravilima odredišne usluge."
+  ] },
+  { title: "3. Kako radi obrazac za članstvo?", paragraphs: [
+    "Obrazac na stranici „Članstvo i kontakt“ trenutno priprema poruku i otvara e-mail aplikaciju na vašem uređaju (mailto). Podaci iz obrasca se u toj verziji ne šalju automatski na server udruženja. Poruka nam stiže tek ako je korisnik sam pošalje kroz svoj e-mail program.",
+    "Slanje interesovanja ne znači automatski prijem u članstvo, prihvatanje partnerstva ili potvrdu učešća u projektu."
+  ] },
+  { title: "4. Zašto obrađujemo podatke?", paragraphs: [
+    "Obrada služi da odgovorimo na upite, razmotrimo zahtjeve za članstvo i volontiranje, dogovorimo saradnju, evidentiramo dostavljene prijedloge i zaštitimo sajt. Odgovarajući pravni osnov može biti postupanje po vašem zahtjevu, saglasnost, zakonska obaveza ili legitimni interes kada je zakonom dopušten.",
+    "Podaci se ne koriste za neobavezni marketing bez odgovarajućeg pravnog osnova. Ne šaljite osjetljive podatke, identifikacione dokumente ili druge nepotrebne informacije putem javnog obrasca."
+  ] },
+  { title: "5. Kome podaci mogu biti dostupni?", paragraphs: [
+    "Ovlaštenim osobama udruženja i, kada je neophodno, pružaocima hostinga, tehničke podrške i e-mail usluga u mjeri potrebnoj za uslugu. Neke platforme imaju infrastrukturu izvan Bosne i Hercegovine; tada se moraju ispuniti odgovarajući zakonski uslovi za prijenos i zaštitu.",
+    "Podatke ne prodajemo. Podaci se mogu dostaviti institucijama kada postoji pravna obaveza ili za konkretnu saradnju uz odgovarajući osnov i obavještenje."
+  ] },
+  { title: "6. Kolačići i vanjski sadržaji", paragraphs: [
+    "Sajt može koristiti tehničke funkcije hostinga, a stranica „O nama“ uključuje video sadržaj sa YouTube servisa u režimu poboljšane privatnosti (youtube-nocookie.com). To ne isključuje sve mrežne zahtjeve niti obradu tehničkih podataka od pružaoca videa.",
+    "Detalji se nalaze na zasebnoj stranici „Kolačići i vanjske usluge“. Eventualni neobavezni analitički ili marketinški alati zahtijevaju tehničku provjeru i odgovarajući izbor korisnika prije aktivacije."
+  ] },
+  { title: "7. Koliko dugo čuvamo podatke?", paragraphs: [
+    "Poruke i prijave interesa zadržavamo samo dok su potrebne za komunikaciju, vođenje relevantne aktivnosti ili ispunjavanje zakonskih obaveza. Rokovi za računovodstvene ili formalne članske evidencije mogu biti drugačiji i uređuju se posebnim pravilima i zakonima.",
+    "Rokove čuvanja tehničkih logova i podataka koje vodi e-mail ili hosting pružalac potrebno je potvrditi u konfiguraciji tih servisa; ne navodimo neprovjeren jedinstveni rok."
+  ] },
+  { title: "8. Vaša prava", paragraphs: [
+    "U skladu sa Zakonom o zaštiti ličnih podataka Bosne i Hercegovine možete zatražiti pristup, ispravku, brisanje, ograničenje obrade, prenosivost gdje je primjenjiva, uložiti prigovor i povući saglasnost za obradu zasnovanu na saglasnosti.",
+    "Za ostvarivanje prava pišite na stazekrajine@gmail.com. Takođe se možete obratiti Agenciji za zaštitu ličnih podataka u Bosni i Hercegovini."
+  ] },
+  { title: "9. Povezani portali i izmjene politike", paragraphs: [
+    "KrajinaTour.ba je urednički turistički vodič, KrajinaTour.org interaktivna turistička platforma, a KellyVektor.tech poslovni portal tehnološkog partnera. Svaki povezani portal može imati zasebnog kontrolora i vlastitu politiku privatnosti.",
+    "Politiku ažuriramo kada se promijene funkcije sajta, tokovi podataka ili relevantni propisi. Datum revizije nalazi se iznad ovog teksta."
+  ] }
+];
+
 export default function PrivatnostPage() {
-  return (
-    <>
-      <PageHero
-        eyebrow="Pravni dokumenti"
-        title="Pravila privatnosti"
-        description="Posljednje ažurirano: oktobar 2026. Ovaj dokument je generički nacrt i zahtijeva pravnu reviziju prije konačne objave."
-      />
-
-      <Section>
-        <div className="prose-sm mx-auto max-w-3xl space-y-6 text-forest-800 leading-relaxed">
-          <p className="rounded-xl bg-clay-400/10 p-4 text-sm text-clay-600">
-            <strong>Napomena:</strong> Tekst ispod je osnovni, generički nacrt
-            pravila privatnosti za potrebe pokretanja sajta (Faza 1). Prije
-            konačnog objavljivanja preporučuje se pravna revizija u skladu sa
-            Zakonom o zaštiti ličnih podataka BiH i relevantnim propisima.
-          </p>
-
-          <h2 className="text-xl font-semibold text-forest-900">
-            1. Ko smo mi
-          </h2>
-          <p>
-            {siteConfig.name} (&quot;Udruženje&quot;, &quot;mi&quot;) upravlja sajtom{" "}
-            {siteConfig.url}. Sjedište udruženja: {siteConfig.address}.
-          </p>
-
-          <h2 className="text-xl font-semibold text-forest-900">
-            2. Koje podatke prikupljamo
-          </h2>
-          <p>
-            Putem forme na stranici &quot;Članstvo i kontakt&quot;
-            prikupljamo podatke koje nam dobrovoljno dostavite: ime i
-            prezime ili naziv organizacije, e-mail adresu, broj telefona
-            (opciono), tip interesa i sadržaj poruke. Ne prikupljamo
-            automatski podatke o lokaciji niti koristimo kolačiće za
-            praćenje ponašanja posjetilaca.
-          </p>
-
-          <h2 className="text-xl font-semibold text-forest-900">
-            3. Svrha obrade podataka
-          </h2>
-          <p>
-            Podatke koristimo isključivo radi odgovaranja na vaš upit,
-            uspostavljanja članstva, volontiranja ili partnerstva, odnosno
-            evidentiranja prijavljenih lokacija/staza.
-          </p>
-
-          <h2 className="text-xl font-semibold text-forest-900">
-            4. Čuvanje i dijeljenje podataka
-          </h2>
-          <p>
-            Podatke ne prodajemo i ne dijelimo sa trećim stranama izvan
-            udruženja, osim kada je to neophodno radi realizacije
-            projekta uz vaš pristanak, ili kada je to zakonska obaveza.
-          </p>
-
-          <h2 className="text-xl font-semibold text-forest-900">
-            5. Vaša prava
-          </h2>
-          <p>
-            Imate pravo zatražiti uvid, izmjenu ili brisanje svojih
-            podataka u bilo kom trenutku, slanjem zahtjeva na{" "}
-            <a
-              className="text-forest-700 underline"
-              href={`mailto:${siteConfig.infoEmail}`}
-            >
-              {siteConfig.infoEmail}
-            </a>
-            .
-          </p>
-
-          <h2 className="text-xl font-semibold text-forest-900">
-            6. Kontakt
-          </h2>
-          <p>
-            Za sva pitanja u vezi sa ovim pravilima privatnosti, obratite nam
-            se putem e-maila na{" "}
-            <a
-              className="text-forest-700 underline"
-              href={`mailto:${siteConfig.infoEmail}`}
-            >
-              {siteConfig.infoEmail}
-            </a>
-            .
-          </p>
-        </div>
-      </Section>
-    </>
-  );
+  return <LegalDocument title="Politika privatnosti" description="Kako Udruženje građana „Staze Krajine“ postupa s podacima posjetilaca, zainteresovanih članova, volontera i partnera." sections={sections} />;
 }
