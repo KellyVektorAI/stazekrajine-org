@@ -4,10 +4,11 @@ import Image from "next/image";
 export function TrailMark({ className = "h-24 w-auto sm:h-28" }: { className?: string }) {
   return (
     <Image
-      src="/dokumenti/logo.svg"
-      alt="Staze Krajine Logo"
-      width={400}
-      height={150}
+      src="/krajina-tour-logo.webp"
+      alt=""
+      width={512}
+      height={485}
+      sizes="112px"
       className={`object-contain ${className}`}
       priority
     />

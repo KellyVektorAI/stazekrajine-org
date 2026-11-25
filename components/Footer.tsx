@@ -10,7 +10,7 @@ export function Footer() {
       <div className="mx-auto grid max-w-6xl gap-10 px-5 py-14 sm:px-8 md:grid-cols-4">
         <div className="md:col-span-2">
           <div className="flex items-center gap-2.5">
-            <TrailMark className="h-8 w-8" />
+            <TrailMark className="h-12 w-12 shrink-0 rounded-lg bg-white p-1" />
             <span className="text-lg font-semibold text-sand-50">
               Staze Krajine
             </span>
