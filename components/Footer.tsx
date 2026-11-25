@@ -18,6 +18,9 @@ export function Footer() {
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-forest-200">
             {siteConfig.description}
           </p>
+          <p className="mt-4 text-xs leading-6 text-forest-200">
+            Turistički portali: <a className="underline" href="https://krajinatour.ba/">KrajinaTour.ba</a> · <a className="underline" href="https://krajinatour.org/">KrajinaTour.org</a>. Tehnološki partner: <a className="underline" href="https://kellyvektor.tech/">„Kelly Vektor AI“ d.o.o.</a>
+          </p>
         </div>
 
         <div>
@@ -58,14 +61,14 @@ export function Footer() {
             <span>Rješenje o registraciji: {siteConfig.registrationNumber}</span>
           </p>
           <nav className="flex flex-wrap gap-x-4 gap-y-1">
-            <a className="hover:text-sand-50" href={siteConfig.statuteUrl}>
-              Statut (PDF)
-            </a>
             <Link className="hover:text-sand-50" href="/privatnost">
               Pravila privatnosti
             </Link>
             <Link className="hover:text-sand-50" href="/uslovi-koristenja">
               Uslovi korištenja
+            </Link>
+            <Link className="hover:text-sand-50" href="/kolacici">
+              Kolačići
             </Link>
           </nav>
         </div>

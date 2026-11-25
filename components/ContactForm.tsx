@@ -117,14 +117,14 @@ export function ContactForm() {
         type="submit"
         className="rounded-full bg-forest-700 px-6 py-3 text-sm font-semibold text-sand-50 transition-colors hover:bg-[#ff8e29]"
       >
-        Pošalji prijavu
+        Pripremi e-mail prijavu
       </button>
 
       {status === "success" && (
         <p className="rounded-xl bg-forest-100 px-4 py-3 text-sm text-forest-800">
-          Hvala! Otvorili smo vam e-mail klijent sa pripremljenom porukom na{" "}
+          E-mail poruka je pripremljena za adresu{" "}
           <strong>{siteConfig.contactEmail}</strong>. Ukoliko se e-mail klijent nije
-          automatski otvorio, molimo pišite nam direktno na navedenu adresu.
+          automatski otvorio, molimo pišite nam direktno na navedenu adresu. Prijava nije poslata dok ne potvrdite slanje u svom e-mail programu.
         </p>
       )}
       {status === "error" && (

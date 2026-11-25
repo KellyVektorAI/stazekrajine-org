@@ -1,5 +1,7 @@
 import { Metadata } from "next";
 import { Section } from "@/components/Section";
+import Link from "next/link";
+import { ConsentVideo } from "@/components/ConsentVideo";
 
 export const metadata: Metadata = {
   title: "O nama | Udruženje građana Staze Krajine",
@@ -66,15 +68,7 @@ export default function AboutPage() {
       </section>
 
       <div className="mx-auto my-8 max-w-5xl px-4 sm:px-6 lg:px-8">
-        <div className="relative aspect-video w-full overflow-hidden rounded-2xl border border-forest-100 shadow-md">
-          <iframe
-            className="absolute inset-0 h-full w-full"
-            src="https://www.youtube-nocookie.com/embed/DOClrinYdPM?autoplay=1&mute=1&loop=1&playlist=DOClrinYdPM&controls=1"
-            title="Staze Krajine Video"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          />
-        </div>
+        <ConsentVideo videoId="DOClrinYdPM" title="Staze Krajine" />
       </div>
 
       <Section title="Misija i vizija">
@@ -95,6 +89,27 @@ export default function AboutPage() {
               prirodnog i kulturnog naslijeđa.
             </p>
           </div>
+        </div>
+      </Section>
+
+
+
+      <Section title="Digitalni projekti i povezani portali" tone="muted">
+        <div className="mx-auto max-w-4xl space-y-5 text-forest-800 leading-7">
+          <p>
+            Udruženje građana „Staze Krajine“ posvećeno je promociji prirode, kulturne baštine, održivog turizma i saradnje sa lokalnim zajednicama. Digitalni portali pomažu da informacije o destinacijama i projektima budu pristupačnije.
+          </p>
+          <ul className="list-disc space-y-3 pl-6">
+            <li><a className="font-semibold underline" href="https://krajinatour.ba/">KrajinaTour.ba</a> — urednički turistički vodiči, lokalne priče, destinacije i smještaj.</li>
+            <li><a className="font-semibold underline" href="https://krajinatour.org/">KrajinaTour.org</a> — interaktivne mape i planer putovanja; pojedine integracije uvode se postepeno.</li>
+            <li><a className="font-semibold underline" href="https://kellyvektor.tech/">KellyVektor.tech</a> — poslovni portal zasebne tehnološke kompanije „Kelly Vektor AI“ d.o.o., partnera na određenim digitalnim projektima.</li>
+          </ul>
+          <p>
+            Udruženje i tehnološka kompanija su odvojena pravna lica sa zasebnim odgovornostima. Prikaz planirane inicijative ne predstavlja tvrdnju da su projektna sredstva već odobrena ili da je svaka usluga aktivna.
+          </p>
+          <p>
+            Za upoznavanje aktivnosti udruženja posjetite <Link className="font-semibold underline" href="/projekti">Projekte</Link>, a za članstvo, volontiranje i saradnju <Link className="font-semibold underline" href="/clanstvo">Članstvo i kontakt</Link>.
+          </p>
         </div>
       </Section>
 

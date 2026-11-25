@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { navigation, siteConfig } from "@/lib/site-config";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const staticPages = [...navigation.map((n) => n.href), "/privatnost", "/uslovi-koristenja"];
+  const staticPages = [...navigation.map((n) => n.href), "/privatnost", "/uslovi-koristenja", "/kolacici"];
 
   return staticPages.map((path) => ({
     url: `${siteConfig.url}${path === "/" ? "" : path}`,
